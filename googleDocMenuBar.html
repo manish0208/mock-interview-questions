@@ -7,10 +7,14 @@
     <title>GoogleDocMenuBar</title>
     <style>
         .container{
-            
+            position: fixed;
             display: flex;
+            width: 100%;
             align-items: center;
             height: 60px;
+            top: 0px;
+            border-bottom: 1px solid black;
+            
         }
         .options{
             display: flex;
@@ -23,9 +27,49 @@
             font-size: 15px;
         }
         .searchbar{
+            position: fixed;
             display: flex;
-            justify-content: center;
+            justify-self: center;
+            margin-left: 20px;
+            right: 150px;
+            margin-right: 15px;
+            
         }
+        .searchbar > input{
+            width: 180px;
+        }
+        
+        .share{
+            position: fixed;
+            right: 60px;
+        }
+        .share > button{
+            background: rgb(5, 149, 197);
+            color: aliceblue;
+            border-color: aliceblue;
+            border: 1px solid;
+        }
+        .login{
+            position: fixed;
+            right: 5px;
+        }
+        .login > button{
+            background: rgb(5, 197, 104);
+            color: aliceblue;
+            border-color: aliceblue;
+            border: 1px solid;
+        }
+        .join{
+            position: fixed;
+            right: 120px;
+        }
+        .join > button{
+            background: rgb(197, 85, 5);
+            color: aliceblue;
+            border-color: aliceblue;
+            border: 1px solid;
+        }
+        
 
         
     </style>
@@ -44,10 +88,21 @@
             <h3 class="option">help</h3>
         </div> 
         <div class="searchbar">
-            <input type="search" name="search" id="sid">
+            <input type="search" name="search" id="sid" placeholder="Search file..">
         </div>
-        
+        <div class="join">
+            <button>Join</button>
+        </div>
 
+        <div class="share">
+            <button>Share</button>
+        </div>
+        <div class="login">
+            <button>login</button>
+        </div>
+
+    
     </div>
+    
 </body>
 </html>

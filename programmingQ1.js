@@ -1,5 +1,5 @@
 // Program to merge two arrays and store them in the third array
-
+// branch -> mock
 
 let arr1 = [1,5,7,9];
 let arr2 = [2,4,6,10,12,15];
